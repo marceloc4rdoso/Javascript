@@ -1,0 +1,259 @@
+:root{
+    --cor-primaria: #e7e9eb;
+    --cor-secundaria: #ADB5BD;
+    --cor-tercearia: #F6F6F6;
+    --cor-quaternaria: #0A3871;
+    --cor-hover: #350552;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 2% 0%;
+    background-color: var(--cor-secundaria);
+}
+
+.container{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5.125rem;
+}
+
+.container__conteudo{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+/*
+* Lado criptografa
+*/
+
+.container__conteudo__criptografa{
+    width: 70%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    gap: 2rem; 
+}
+.container__conteudo__criptografa__texto_entrada{
+    border: 0.02rem solid ;
+    max-width: 100%;
+    border-radius: 0.5rem;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 2rem;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.container__conteudo__criptografa__alerta{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding: 2%;
+    gap: 2rem;
+    font-size: 0.7rem;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.container__conteudo__criptografa__img-alerta{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding: 2%;
+    gap: 2rem;
+}
+
+.container__conteudo__criptografa__opcoes{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2%;
+    gap: 2rem;       
+}
+
+.container__conteudo__criptografa__botao-cripitografa{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5rem;
+    border: 0.125rem solid ;
+    width: 100%;
+    text-align: center;
+    border-radius: 1rem;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.7rem;
+    padding: 1rem 0;
+    text-decoration: none;
+    background-color: var(--cor-quaternaria);
+    color: var(--cor-tercearia);
+       
+}
+
+
+.container__conteudo__criptografa__botao-descripitografa{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5rem;
+    border: 0.125rem solid ;
+    width: 100%;
+    text-align: center;
+    border-radius: 1rem;
+    font-family: var(--fonte-secundaria); 
+    font-size: 0.7rem;
+    padding: 1rem 0;
+    text-decoration: none;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quaternaria);
+       
+}
+/*
+* Lado descriptografa
+*/
+.container__conteudo__descriptografa{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.125rem solid ;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    gap: 2rem;
+}
+
+.container__conteudo__descriptografa__texto_saida{
+    display: none;
+    border: 0.02rem solid ;
+    max-width: 100%;
+    border-radius: 0.5rem;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 2rem;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.container__conteudo__descriptografa__imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding: 5%;
+    gap: 2rem;
+    
+}
+.container__conteudo__descriptografa__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    border: 0.02rem solid ;
+    max-width: 100%;
+    border-radius: 0.5rem;  
+    padding: 5%;
+    gap: 0.5rem;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.7rem;
+
+    
+}
+.container__conteudo__descriptografa__botao-copia{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    border: 0.125rem solid ;
+    width: 100%;
+    text-align: center;
+    border-radius: 1rem;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.7rem;
+    padding: 1rem 0;
+    text-decoration: none;
+    background-color: var(--cor-quaternaria);
+    color: var(--cor-secundaria);
+       
+}
+
+
+.rodape{
+    
+    background-color: var(--cor-quaternaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+/*
+* Hovers
+*/
+
+
+.container__conteudo__criptografa__botao-cripitografa:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+}
+
+.container__conteudo__criptografa__botao-descripitografa:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+}
+
+.container__conteudo__descriptografa__botao-copia:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+}
+
+/*
+* Dispositivos
+*/
+
+@media (max-width: 1000px){
+    .container{
+        padding: 5%;
+    }
+    .container__conteudo{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container__conteudo__criptografa{
+        flex-direction: column;
+        padding: 2%;
+    }
+    .container__conteudo__descriptografa{
+        width: auto;
+    }
+}
